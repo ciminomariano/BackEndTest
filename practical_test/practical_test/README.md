@@ -75,8 +75,3 @@ Example response:
 Validation
 To validate the numbers presented by the API, you can visit the following link: Investidor Petrobras - Dividends and JCP. Compare the dividend data obtained from the API with the information provided on the website to ensure accuracy.
 
-Contributing
-Contributions to the project are welcome. If you have any suggestions, bug reports, or feature requests, please open an issue on the GitHub repository.
-
-License
-[Specify the license under which your project is distributed. You can choose an open-source license that suits your needs or simply state that
