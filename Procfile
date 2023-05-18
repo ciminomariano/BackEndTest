@@ -1,0 +1,1 @@
+web: gunicorn practical_test.wsgi --log-file -
