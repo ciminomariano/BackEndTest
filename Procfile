@@ -1,1 +1,1 @@
-web: gunicorn practical_test.wsgi --log-file -
+web: gunicorn practical_test.practical_test.wsgi --log-file -
