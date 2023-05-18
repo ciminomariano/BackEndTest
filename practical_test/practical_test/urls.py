@@ -15,8 +15,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.urls import path
-from .views import get_csrf_token,download_dividends,dividends_by_year
-
+from .views import get_csrf_token, download_dividends, dividends_by_year
 
 urlpatterns = [
     # ... Otras rutas de URL ...
