@@ -48,6 +48,7 @@ To use the project:
    - Replace `<symbol>` with the desired symbol (e.g., PETR4.SA).
    - Replace `<year>` with the desired year (e.g., 2022).
 4. The API response will contain the summarized amount of dividends for the specified symbol and year.
+5. NOTE: There is a POSTMAN COLLECTION to run this endpoints in the practicast test folder
 
 ## API Documentation
 
