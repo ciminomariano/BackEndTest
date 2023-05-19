@@ -1,0 +1,86 @@
+{
+	"info": {
+		"_postman_id": "ac347cbf-2634-491e-ac8d-a787b527e61b",
+		"name": "Practical test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5058637",
+		"_collection_link": "https://b2b-tef.postman.co/workspace/Ouronova~daf13d40-6011-43ab-9ad7-e72fab347935/collection/5058637-ac347cbf-2634-491e-ac8d-a787b527e61b?action=share&creator=5058637&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "Get_token",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "dividends_download",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "X-CSRFToken",
+						"value": "jSDmPehPEs6ZB09o4wxRbhKVjKVH74ylkWYgpUg2m6WyQWXAJgwOwSKmFIuaDvbS",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "http://127.0.0.1:8000/dividends/download/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dividends",
+						"download",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "dividends_get",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/dividends/dividends_by_year/?symbol=PETR4.SA&year=2022",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"dividends",
+						"dividends_by_year",
+						""
+					],
+					"query": [
+						{
+							"key": "symbol",
+							"value": "PETR4.SA"
+						},
+						{
+							"key": "year",
+							"value": "2022"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
