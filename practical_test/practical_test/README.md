@@ -28,7 +28,8 @@ To install and run the project locally, follow these steps:
    - On Windows: `.\env\Scripts\activate`
 5. Install the dependencies: `pip install -r requirements.txt`
 6. Set up the MySQL database:
-   - Create a MySQL database for the project.
+   - Create a MySQL database with the name practicaltest
+   - user root and password admin for the project.
    - Configure the database connection in the `settings.py` file.
 7. Run database migrations: `python manage.py migrate`
 
@@ -37,9 +38,13 @@ To install and run the project locally, follow these steps:
 To use the project:
 
 1. Start the development server: `python manage.py runserver`
-2. Access the API endpoint: `http://localhost:8000/api/dividends/download/` (Use Post Method)
+2. Access the endpoint with get method http://127.0.0.1:8000/csrf_token/
+   copy the token generated and add it on a new post request in the headers as X-CSRFToken
+   (step 3)
+3. Access the API endpoint: `http://localhost:8000/api/dividends/download/` (Use Post Method)
    This endpoint will download the dividend obtained from yahoo
-3. Access the API endpoint: `http://localhost:8000/api/dividends/<symbol>/<year>`
+   and fill the database with the info
+4. Access the API endpoint: `http://localhost:8000/api/dividends/<symbol>/<year>`
    - Replace `<symbol>` with the desired symbol (e.g., PETR4.SA).
    - Replace `<year>` with the desired year (e.g., 2022).
 4. The API response will contain the summarized amount of dividends for the specified symbol and year.
@@ -48,9 +53,10 @@ To use the project:
 
 The API provides a single endpoint to retrieve the summarized amount of dividends per year for a given symbol and year.
 
-### Endpoint
-
-GET /api/dividends/<symbol>/<year>
+### Endpoints
+GET http://127.0.0.1:8000/csrf_token/
+POST http://127.0.0.1:8000/dividends/download/
+GET http://127.0.0.1:8000/dividends/dividends_by_year/?symbol=PETR4.SA&year=2021
 
 yaml
 Copy code
